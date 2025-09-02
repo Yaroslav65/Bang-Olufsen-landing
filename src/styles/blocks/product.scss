@@ -1,0 +1,30 @@
+.product {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+
+  &__title {
+    font-size: 18px;
+  }
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__photo {
+    display: block;
+    width: 100%;
+    transition: transform $effectDuration ease;
+
+    @include onDesktop {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    letter-spacing: 0.15px;
+  }
+}
